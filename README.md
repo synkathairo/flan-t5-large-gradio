@@ -7,11 +7,14 @@ The gradio frontend runs in the browser, and displays a chat-like interface for 
 
 Install the dependencies: gradio, transformers, sentencepiece
 
+Recommended to install: safetensors
+
 Optionally also install: accelerate
 
 Run with: `python flan-t5-large-gradio.py`
 
 Optionally run with: `accelerate launch flan-t5-large-gradio.py`
+(this may or may not speed up your execution)
 
 ## To use other size models
 
