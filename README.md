@@ -16,3 +16,6 @@ Optionally run with: `accelerate launch flan-t5-large-gradio.py`
 ## To use other size models
 
 Modify lines 4-6, comment/uncomment to select a different model. Note that each model has different requirements for storage/RAM, the code as presently configured assumes sufficient RAM to load the entire model.
+
+Additional info on loading large models is on the [Hugging Face website](https://huggingface.co/blog/accelerate-large-models), see [also](https://huggingface.co/docs/accelerate/v0.11.0/en/big_modeling)
+
