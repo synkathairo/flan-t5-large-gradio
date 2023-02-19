@@ -6,6 +6,8 @@ import gradio as gr
 model_name = "google/flan-t5-large"
 # model_name = "google/flan-t5-xl"
 
+max_length = 200
+
 print("Using `{}`.".format(model_name))
 
 tokenizer = T5Tokenizer.from_pretrained(model_name)
@@ -17,7 +19,7 @@ print("T5ForConditionalGeneration loaded from pretrained.")
 
 def inference(input_text, history=[]):
     input_ids = tokenizer(input_text, return_tensors="pt").input_ids
-    outputs = model.generate(input_ids, max_length=200, bos_token_id=0)
+    outputs = model.generate(input_ids, max_length=max_length, bos_token_id=0)
     result = tokenizer.decode(outputs[0], skip_special_tokens=True)
     history.append((input_text, result))
     return history, history

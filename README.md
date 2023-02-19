@@ -1,5 +1,7 @@
 # flan-t5-large-gradio
-A gradio frontend for [Google's Flan-T5 Large](https://huggingface.co/google/flan-t5-large) language model, can also be adjusted for other sizes.
+A [gradio](https://gradio.app/) frontend for [Google's Flan-T5 Large](https://huggingface.co/google/flan-t5-large) language model, can also be adjusted for other sizes.
+
+The gradio frontend runs in the browser, and displays a chat-like interface for interacting with the language model.
 
 ## To run:
 
