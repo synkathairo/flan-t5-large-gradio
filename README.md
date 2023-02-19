@@ -4,9 +4,11 @@ A gradio frontend for [Google's Flan-T5 Large](https://huggingface.co/google/fla
 ## To run:
 
 Install the dependencies: gradio, transformers, sentencepiece
+
 Optionally also install: accelerate
 
 Run with: `python flan-t5-large-gradio.py`
+
 Optionally run with: `accelerate launch flan-t5-large-gradio.py`
 
 ## To use other size models
